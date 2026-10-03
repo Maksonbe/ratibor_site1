@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>О компании — Райтибор</title>
+  <meta name="description" content="Компания Райтибор – резидент ОЭЗ «Технополис Москва», производитель планшетов, смартфонов, IP-камер и видеорегистраторов.">
+  <link rel="canonical" href="about.html">
+  <meta name="theme-color" content="#10151a">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="О компании — Райтибор">
+  <meta property="og:description" content="Компания Райтибор – резидент ОЭЗ «Технополис Москва», производитель планшетов, смартфонов, IP-камер и видеорегистраторов.">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="about.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=8">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=8">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=8">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png?v=9">
+  <!-- Установка на телефон / рабочий стол (иконка, название, цвета) -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Райтибор">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="preload" href="assets/fonts/ibm-plex-sans-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <meta name="color-scheme" content="dark light">
+  <!-- До первой отрисовки: платформа (os-apple / os-android / os-desktop — для стиля «Liquid Glass» на iPhone и Mac),
+       тема (без «вспышки» тёмной у пользователей светлой) и фаза фоновой анимации -->
+  <script>(function(){var u=navigator.userAgent;document.documentElement.classList.add('os-'+(/iPhone|iPad|iPod|Macintosh/.test(u)?'apple':/Android/.test(u)?'android':'desktop'));if(!(/Safari/.test(u)&&!/Chrome|Chromium|CriOS|Edg|OPR|Firefox|FxiOS/.test(u)))document.documentElement.classList.add('can-zoom');try{var t=localStorage.getItem('theme');if(t==='light'||(t===null&&matchMedia('(prefers-color-scheme: light)').matches)){document.documentElement.classList.add('light-theme');}}catch(e){}document.documentElement.style.setProperty('--amb',-(Date.now()/1000%120).toFixed(2)+'s');})();</script>
+  <!-- Плавный переход между страницами (Chrome/Edge 126+, Safari 18.2+): шапка «замирает» на месте,
+       а у пришедшей страницы не повторяются входные анимации — без эффекта «перезагрузки» -->
+  <script>(function(){var r=document.documentElement,K='vtNav';try{if(sessionStorage.getItem(K)){sessionStorage.removeItem(K);r.classList.add('vt-nav','vt-arrived');}}catch(x){}addEventListener('pageswap',function(e){if(!e.viewTransition)return;r.classList.add('vt-nav');try{sessionStorage.setItem(K,'1');}catch(x){}});addEventListener('pagereveal',function(e){if(!e.viewTransition){r.classList.remove('vt-nav');return;}r.classList.add('vt-nav');e.viewTransition.finished.finally(function(){r.classList.remove('vt-nav');});});addEventListener('pageshow',function(e){if(e.persisted){r.classList.remove('vt-nav');try{sessionStorage.removeItem(K);}catch(x){}try{var t=localStorage.getItem('theme');if(t)r.classList.toggle('light-theme',t==='light');}catch(x){}document.dispatchEvent(new Event('themesync'));}});})();</script>
+  <link rel="stylesheet" href="css/style.css">
+  <noscript><style>[data-reveal],img[data-fade]{opacity:1!important;transform:none!important;transition:none!important}</style></noscript>
+  <script src="js/script.js" defer blocking="render"></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><span></span><span></span><span></span></div>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header" id="site-header">
+    <div class="wrap nav">
+      <a href="index.html" class="logo" aria-label="Райтибор — на главную">
+        <span class="logo-dot" aria-hidden="true"></span>РАЙТИБОР
+      </a>
+      <nav class="nav-links" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="products.html">Продукты</a>
+        <a href="about.html" class="is-active">О компании</a>
+        <a href="index.html#contacts" data-scroll-contacts>Контакты</a>
+      </nav>
+      <div class="nav-right">
+        <div class="nav-actions">
+          <button type="button" class="theme-toggle" id="themeToggle" aria-label="Переключить тему" aria-pressed="false">
+            <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path class="ti-moon" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              <g class="ti-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></g>
+            </svg>
+          </button>
+          <a href="index.html#contacts" class="nav-cta" data-contact-open>Связаться</a>
+        </div>
+        <button type="button" class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" hidden>
+      <a href="index.html">Главная</a>
+      <a href="products.html">Продукты</a>
+      <a href="about.html">О компании</a>
+      <a href="index.html#contacts" data-scroll-contacts>Контакты</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="about-hero">
+      <div class="wrap about-page-grid">
+        <div class="about-page-text">
+          <p class="eyebrow" data-reveal><span class="rec" aria-hidden="true"></span>резидент ОЭЗ «Технополис Москва»</p>
+          <h1 data-reveal>О компании</h1>
+
+          <p class="lead" data-reveal>ООО «Райтибор» — российский производитель электроники и разработчик программного обеспечения для мобильных устройств и систем видеонаблюдения. Компания основана в 2022 году и работает на площадке особой экономической зоны «Технополис Москва».</p>
+
+          <div class="about-block" data-reveal style="--stagger:1">
+            <h2 class="about-subhead"><span class="subhead-mark" aria-hidden="true"></span>Производство</h2>
+            <p>Производство компании роботизировано и ориентировано на выпуск современных электронных устройств — в том числе планшетов и смартфонов на <strong class="accent-text">отечественной операционной системе</strong>. В своей работе «Райтибор» опирается на передовые технологии и строгий контроль качества на всех этапах производства.</p>
+          </div>
+
+          <div class="about-callout" data-reveal style="--stagger:2">
+            <p>По данным на 2025 год предприятие выпустило <strong class="accent-text">более 20&nbsp;000 смартфонов и планшетов</strong>, а его продукция официально включена в реестр отечественного программного обеспечения. Развитие производства генеральный директор компании Ирина Вячеславовна Петрова связывает со стратегией импортозамещения приоритетных видов радиоэлектронной продукции в России.</p>
+          </div>
+
+          <div class="about-block" data-reveal style="--stagger:3">
+            <h2 class="about-subhead"><span class="subhead-mark" aria-hidden="true"></span>Миссия</h2>
+            <p>Цель компании — вносить вклад в развитие отечественной электроники и обеспечивать потребителей высокотехнологичными решениями российского производства.</p>
+          </div>
+
+          <div class="about-actions" data-reveal style="--stagger:4">
+            <a href="products.html" class="btn btn-primary">Наши продукты</a>
+            <a href="index.html#contacts" class="btn btn-ghost" data-contact-open>Связаться с нами</a>
+          </div>
+        </div>
+
+        <div class="about-page-side" data-reveal style="--stagger:1">
+          <figure class="about-photo">
+            <img data-fade
+              src="assets/products/phone.webp"
+              alt="Смартфон OKO Phone 5 PRO — продукция компании «Райтибор»"
+              loading="lazy" decoding="async" width="640" height="480">
+          </figure>
+          <dl class="fact-panel">
+            <div class="fact-row"><dt>Полное наименование</dt><dd>ООО «Райтибор»</dd></div>
+            <div class="fact-row"><dt>Дата регистрации</dt><dd>20.06.2022</dd></div>
+            <div class="fact-row"><dt>ИНН</dt><dd>9724086880</dd></div>
+            <div class="fact-row"><dt>Площадка</dt><dd>ОЭЗ «Технополис Москва», Печатники</dd></div>
+            <div class="fact-row"><dt>Отрасль</dt><dd>Электроника и связь</dd></div>
+            <div class="fact-row"><dt>Статус</dt><dd>Резидент</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="directions">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <div>
+            <span class="kicker"><b>01</b>направления</span>
+            <h2>Направления деятельности</h2>
+          </div>
+          <p class="tag">По данным официального реестра резидентов ОЭЗ «Технополис Москва»: видеонаблюдение и видеорегистраторы, телекоммуникационное оборудование и связь</p>
+        </div>
+        <div class="dir-grid">
+
+          <article class="dir-card" data-reveal style="--stagger:0">
+            <div class="dir-photo">
+              <img data-fade src="assets/products/mvk-ip-2140na.webp"
+                   alt="Купольная IP-камера МВК-IP 2140 НА" loading="lazy" decoding="async" width="640" height="480">
+            </div>
+            <div class="dir-body">
+              <h3>Видеонаблюдение в помещениях</h3>
+              <p>Купольные IP-камеры для стационарной установки внутри зданий: офисов, складов, торговых помещений.</p>
+            </div>
+          </article>
+
+          <article class="dir-card" data-reveal style="--stagger:1">
+            <div class="dir-photo">
+              <img data-fade src="assets/products/mvk-ip-4510a.webp"
+                   alt="Уличная IP-камера МВК-IP 4510 A" loading="lazy" decoding="async" width="640" height="480">
+            </div>
+            <div class="dir-body">
+              <h3>Уличное видеонаблюдение</h3>
+              <p>Камеры в защищённом корпусе для непрерывной работы на улице при температуре от −40 до +60 °C.</p>
+            </div>
+          </article>
+
+          <article class="dir-card" data-reveal style="--stagger:2">
+            <div class="dir-photo">
+              <img data-fade src="assets/products/mvk-ip-2620.webp"
+                   alt="IP-камера МВК-IP 2620 для транспорта" loading="lazy" decoding="async" width="640" height="480">
+            </div>
+            <div class="dir-body">
+              <h3>Мобильное и транспортное видеонаблюдение</h3>
+              <p>Компактные герметичные камеры для установки на транспортных средствах, устойчивые к тряске и вибрации.</p>
+            </div>
+          </article>
+
+          <article class="dir-card" data-reveal style="--stagger:3">
+            <div class="dir-photo">
+              <img data-fade src="assets/products/mvk-7802.webp"
+                   alt="Веб-камера МВК-7802" loading="lazy" decoding="async" width="640" height="480">
+            </div>
+            <div class="dir-body">
+              <h3>Веб-камеры и видеосвязь</h3>
+              <p>Веб-камеры с шумоподавлением для видеоконференций и биометрической аутентификации — часть направления телекоммуникационного оборудования и связи.</p>
+            </div>
+          </article>
+
+          <article class="dir-card" data-reveal style="--stagger:4">
+            <div class="dir-photo">
+              <img data-fade src="assets/products/dozor.webp"
+                   alt="Персональный видеорегистратор «Дозор-78»" loading="lazy" decoding="async" width="640" height="480">
+            </div>
+            <div class="dir-body">
+              <h3>Персональная видеорегистрация</h3>
+              <p>Носимые регистраторы «Дозор-78» с удалённым видеомониторингом, геопозицией и тревожной кнопкой.</p>
+            </div>
+          </article>
+
+          <article class="dir-card" data-reveal style="--stagger:5">
+            <div class="dir-photo">
+              <img data-fade src="assets/products/tab5-pro.webp"
+                   alt="Планшет OKO Tab 5 PRO на отечественной ОС" loading="lazy" decoding="async" width="640" height="480">
+            </div>
+            <div class="dir-body">
+              <h3>Мобильная электроника и ПО</h3>
+              <p>Планшеты и смартфоны OKO на отечественной операционной системе, включённой в реестр российского ПО.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="values">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <div>
+            <span class="kicker"><b>02</b>принципы</span>
+            <h2>Принципы работы</h2>
+          </div>
+        </div>
+        <div class="dir-grid value-grid">
+          <article class="dir-card value-card" data-reveal style="--stagger:0">
+            <div class="dir-body">
+              <h3>Роботизированное производство</h3>
+              <p>Современное оборудование и автоматизация технологических процессов на всех этапах сборки устройств.</p>
+            </div>
+          </article>
+          <article class="dir-card value-card" data-reveal style="--stagger:1">
+            <div class="dir-body">
+              <h3>Контроль качества</h3>
+              <p>Строгая проверка комплектующих и готовых изделий перед отгрузкой заказчикам.</p>
+            </div>
+          </article>
+          <article class="dir-card value-card" data-reveal style="--stagger:2">
+            <div class="dir-body">
+              <h3>Отечественное ПО</h3>
+              <p>Устройства работают на российской операционной системе, внесённой в единый государственный реестр.</p>
+            </div>
+          </article>
+          <article class="dir-card value-card" data-reveal style="--stagger:3">
+            <div class="dir-body">
+              <h3>Доработка под задачи заказчика</h3>
+              <p>Гибкая модификация программной и аппаратной части под требования конкретного проекта и отрасли.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-legal">
+        <p class="fmuted">© <span id="year">2026</span> ООО «Райтибор». Все права защищены.</p>
+        <p class="fmuted"><a href="privacy.html">Политика обработки персональных данных</a> · <a href="consent.html">Согласие на обработку</a></p>
+      </div>
+      <p class="fmuted mono">ОГРН 1227700355486 · ИНН 9724086880</p>
+    </div>
+  </footer>
+
+  <button type="button" class="to-top" id="to-top" aria-label="Наверх страницы" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+</body>
+</html>

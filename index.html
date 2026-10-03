@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Райтибор — ПО и электроника для систем видеонаблюдения</title>
+  <meta name="description" content="ООО «Райтибор» — разработка программного обеспечения для систем видеонаблюдения и производство отечественных IP-камер, видеорегистраторов и мобильной электроники. Резидент ОЭЗ «Технополис Москва».">
+  <link rel="canonical" href="index.html">
+  <meta name="theme-color" content="#10151a">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Райтибор — ПО и электроника для систем видеонаблюдения">
+  <meta property="og:description" content="Разработка ПО для видеонаблюдения и производство отечественных IP-камер, видеорегистраторов, смартфонов и планшетов.">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="index.html">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=8">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=8">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=8">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png?v=9">
+  <!-- Установка на телефон / рабочий стол (иконка, название, цвета) -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Райтибор">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="preload" href="assets/fonts/ibm-plex-sans-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+
+  <meta name="color-scheme" content="dark light">
+  <!-- До первой отрисовки: платформа (os-apple / os-android / os-desktop — для стиля «Liquid Glass» на iPhone и Mac),
+       тема (без «вспышки» тёмной у пользователей светлой) и фаза фоновой анимации -->
+  <script>(function(){var u=navigator.userAgent;document.documentElement.classList.add('os-'+(/iPhone|iPad|iPod|Macintosh/.test(u)?'apple':/Android/.test(u)?'android':'desktop'));if(!(/Safari/.test(u)&&!/Chrome|Chromium|CriOS|Edg|OPR|Firefox|FxiOS/.test(u)))document.documentElement.classList.add('can-zoom');try{var t=localStorage.getItem('theme');if(t==='light'||(t===null&&matchMedia('(prefers-color-scheme: light)').matches)){document.documentElement.classList.add('light-theme');}}catch(e){}document.documentElement.style.setProperty('--amb',-(Date.now()/1000%120).toFixed(2)+'s');})();</script>
+  <!-- Плавный переход между страницами (Chrome/Edge 126+, Safari 18.2+): шапка «замирает» на месте,
+       а у пришедшей страницы не повторяются входные анимации — без эффекта «перезагрузки» -->
+  <script>(function(){var r=document.documentElement,K='vtNav';try{if(sessionStorage.getItem(K)){sessionStorage.removeItem(K);r.classList.add('vt-nav','vt-arrived');}}catch(x){}addEventListener('pageswap',function(e){if(!e.viewTransition)return;r.classList.add('vt-nav');try{sessionStorage.setItem(K,'1');}catch(x){}});addEventListener('pagereveal',function(e){if(!e.viewTransition){r.classList.remove('vt-nav');return;}r.classList.add('vt-nav');e.viewTransition.finished.finally(function(){r.classList.remove('vt-nav');});});addEventListener('pageshow',function(e){if(e.persisted){r.classList.remove('vt-nav');try{sessionStorage.removeItem(K);}catch(x){}try{var t=localStorage.getItem('theme');if(t)r.classList.toggle('light-theme',t==='light');}catch(x){}document.dispatchEvent(new Event('themesync'));}});})();</script>
+  <link rel="stylesheet" href="css/style.css">
+  <noscript><style>[data-reveal],img[data-fade]{opacity:1!important;transform:none!important;transition:none!important}</style></noscript>
+  <script src="js/products-data.js" defer blocking="render"></script>
+  <script src="js/script.js" defer blocking="render"></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header" id="site-header">
+    <div class="wrap nav">
+      <a href="index.html" class="logo" aria-label="Райтибор — на главную">
+        <span class="logo-dot" aria-hidden="true"></span>РАЙТИБОР
+      </a>
+
+      <nav class="nav-links" aria-label="Основная навигация">
+        <a href="index.html" class="is-active">Главная</a>
+        <a href="products.html">Продукты</a>
+        <a href="about.html">О компании</a>
+        <a href="#contacts" data-scroll-contacts>Контакты</a>
+      </nav>
+
+      <div class="nav-right">
+        <div class="nav-actions">
+          <button type="button" class="theme-toggle" id="themeToggle" aria-label="Переключить тему" aria-pressed="false">
+            <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path class="ti-moon" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              <g class="ti-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></g>
+            </svg>
+          </button>
+          <a href="#contacts" class="nav-cta" data-contact-open>Связаться</a>
+        </div>
+
+        <button type="button" class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" hidden>
+      <a href="index.html">Главная</a>
+      <a href="products.html">Продукты</a>
+      <a href="about.html">О компании</a>
+      <a href="#contacts" data-scroll-contacts>Контакты</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- Герой -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-text" data-reveal>
+          <p class="eyebrow"><span class="rec" aria-hidden="true"></span>резидент ОЭЗ «Технополис Москва»</p>
+          <h1>Программное обеспечение и электроника для систем видеонаблюдения</h1>
+          <p class="lead">Разрабатываем ПО для стационарного, мобильного и персонального видеонаблюдения и производим отечественные IP-камеры, видеорегистраторы и мобильные устройства.</p>
+          <div class="hero-actions">
+            <a href="products.html" class="btn btn-primary">Все продукты</a>
+            <a href="about.html" class="btn btn-ghost">О компании</a>
+          </div>
+        </div>
+
+        <!-- Витрина-«видоискатель»: камера «распознаёт» устройства компании.
+             Слайды формируются из PRODUCTS (js/products-data.js), в разметке —
+             статичный первый кадр на случай отключённого JS. -->
+        <div class="hero-visual" id="hero-visual" data-reveal style="--stagger:2">
+          <div class="hv-panel">
+            <span class="hv-corner hv-corner--tl" aria-hidden="true"></span>
+            <span class="hv-corner hv-corner--tr" aria-hidden="true"></span>
+            <span class="hv-corner hv-corner--bl" aria-hidden="true"></span>
+            <span class="hv-corner hv-corner--br" aria-hidden="true"></span>
+            <div class="hv-bar hv-bar--top" aria-hidden="true">
+              <span class="hv-rec"><i></i>REC</span>
+              <span class="hv-cam" id="hv-cam">CAM-01 · 2K</span>
+            </div>
+            <div class="hv-scan" aria-hidden="true"></div>
+            <div class="hv-stage" id="hv-stage">
+              <a class="hv-slide is-active" href="product.html?id=1">
+                <span class="hv-obj">
+                  <img src="assets/products/tab5-pro.webp" alt="OKO Tab 5 PRO" width="512" height="510" decoding="async" fetchpriority="high">
+                  <span class="hv-box" aria-hidden="true"><span class="hv-tag">планшет · 97%</span></span>
+                </span>
+              </a>
+            </div>
+            <div class="hv-bar hv-bar--bottom">
+              <div class="hv-caption" id="hv-caption">
+                <span class="hv-caption-cat">Планшетный компьютер</span>
+                <span class="hv-caption-name">OKO Tab 5 PRO</span>
+              </div>
+              <div class="hv-dots" id="hv-dots" role="group" aria-label="Выбор устройства"></div>
+            </div>
+          </div>
+          <div class="hv-chip" aria-hidden="true"><span class="hv-chip-dot"></span>Собственное производство</div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <dl class="stats" data-reveal>
+          <div class="stat">
+            <dt class="label">год основания</dt>
+            <dd class="num" data-count="2022" data-from="2010" data-plain>2022</dd>
+          </div>
+          <div class="stat">
+            <dt class="label">смартфонов и планшетов выпущено в 2025&nbsp;году</dt>
+            <dd class="num" data-count="20000" data-suffix="+">20&nbsp;000+</dd>
+          </div>
+          <div class="stat">
+            <dt class="label">направлений деятельности</dt>
+            <dd class="num" data-count="6">6</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- О компании (кратко) -->
+    <section id="about">
+      <div class="wrap about-grid" data-reveal>
+        <div class="about-text">
+          <span class="kicker"><b>01</b>о компании</span>
+          <h2>О компании</h2>
+          <p>ООО «Райтибор» создано с целью разработки современного программного обеспечения для широкого круга задач. Специализация компании — программное обеспечение для систем персонального и мобильного видеонаблюдения.</p>
+          <p>Компания ведёт разработку, доработку и модификацию ПО для систем безопасности и мобильной электроники, а также производит импортозамещающую радиоэлектронную продукцию: мобильные устройства, IP-видеокамеры, видеорегистраторы и комплексы видеорегистрации.</p>
+          <p>Компания зарегистрирована в Москве и входит в состав резидентов особой экономической зоны «Технополис Москва».</p>
+          <a href="about.html" class="btn btn-ghost about-more">Подробнее о компании</a>
+        </div>
+
+        <div class="about-side">
+          <figure class="about-photo">
+            <img data-fade
+              src="assets/products/tab5.webp"
+              alt="Планшет OKO Tab 5 — продукция компании «Райтибор»"
+              loading="lazy" decoding="async" width="640" height="480">
+          </figure>
+          <dl class="fact-panel">
+            <div class="fact-row"><dt>Полное наименование</dt><dd>ООО «Райтибор»</dd></div>
+            <div class="fact-row"><dt>Дата регистрации</dt><dd>20.06.2022</dd></div>
+            <div class="fact-row"><dt>ОГРН</dt><dd>1227700355486</dd></div>
+            <div class="fact-row"><dt>ИНН / КПП</dt><dd>9724086880 / 772401001</dd></div>
+            <div class="fact-row"><dt>Отрасль</dt><dd>ИТ / радиоэлектроника</dd></div>
+            <div class="fact-row"><dt>Регион</dt><dd>г. Москва</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Продукция (превью) -->
+    <section id="featured-products">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <div>
+            <span class="kicker"><b>02</b>продукция</span>
+            <h2>Продукция</h2>
+          </div>
+          <p class="tag">Планшеты, смартфон, IP-камеры и видеорегистраторы собственного производства</p>
+        </div>
+        <div class="product-grid" id="featured-grid" data-reveal>
+          <!-- Карточки вставляются через JS (script.js, блок «Превью каталога на главной») -->
+        </div>
+        <div class="section-more">
+          <a href="products.html" class="btn btn-ghost">Смотреть весь каталог →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты: реквизиты видны на странице (и для поисковиков),
+         а форма обратной связи — в едином модальном окне, которое
+         открывается из шапки на любой странице сайта -->
+    <section id="contacts" class="contacts-band">
+      <div class="wrap">
+        <div class="cta-panel" data-reveal>
+          <div class="cta-text">
+            <span class="kicker"><b>03</b>контакты</span>
+            <h2>Свяжитесь с нами</h2>
+            <p>Расскажите о задаче — подберём устройства и ПО, ответим в течение рабочего дня.</p>
+          </div>
+          <button type="button" class="btn btn-primary" data-contact-open>Написать нам</button>
+        </div>
+        <dl class="contact-cards">
+          <div class="contact-card" data-reveal style="--stagger:0">
+            <dt>Адрес</dt><dd>г. Москва, пр-кт Волгоградский, д. 42, к. 24</dd>
+          </div>
+          <div class="contact-card" data-reveal style="--stagger:1">
+            <dt>Телефон</dt><dd><a href="tel:+74952216622">+7&nbsp;495&nbsp;221&#8209;66&#8209;22</a></dd>
+          </div>
+          <div class="contact-card" data-reveal style="--stagger:2">
+            <dt>Почта</dt><dd><a href="mailto:info@raitibor.ru">info@raitibor.ru</a></dd>
+          </div>
+          <div class="contact-card" data-reveal style="--stagger:3">
+            <dt>Режим работы</dt><dd>Пн–Пт, 09:00–18:00</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-legal">
+        <p class="fmuted">© <span id="year">2026</span> ООО «Райтибор». Все права защищены.</p>
+        <p class="fmuted"><a href="privacy.html">Политика обработки персональных данных</a> · <a href="consent.html">Согласие на обработку</a></p>
+      </div>
+      <p class="fmuted mono">ОГРН 1227700355486 · ИНН 9724086880</p>
+    </div>
+  </footer>
+
+  <button type="button" class="to-top" id="to-top" aria-label="Наверх страницы" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+</body>
+</html>
